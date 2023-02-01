@@ -565,3 +565,118 @@ a {
     width: 470px;
     height: 440px;
 }
+
+/* ================= Blog =============== */
+.blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #fffcf4;
+}
+
+.blog .blog-top {
+    text-align: center;
+}
+
+.blog-top .desc {
+    width: 448px;
+    margin: 16px auto auto;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #696262;
+}
+
+.blog .blog-list {
+    display: flex;
+    margin-top: 55px;
+    gap: 0 30px;
+}
+
+.blog-list .blog-item {
+    flex: 1;
+    width: 33.33%;
+    border-radius: 16px;
+    background: #ffffff;
+    gap: 30px;
+}
+
+.blog-list .blog-item:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.blog-list .blog-item .thumb {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog-list .blog-item .info {
+    margin: 20px 20px 28px;
+}
+
+.blog-list .blog-item .date {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 12px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.blog-list .blog-item .date::before {
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.blog-list .blog-item .date::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: -27px;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background: #e2dfda;
+    border-radius: 0.5px;
+}
+
+.blog-list .blog-item .title a {
+    display: inline-block;
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+}
+
+.blog-list .blog-item .btn {
+    font-size: 1.4rem;
+}
+
+.blog-list .blog-item .btn:hover {
+    background: var(--primary-color);
+}
+
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+}
+
+.blog .dot.active {
+    background: var(--primary-color);
+}
